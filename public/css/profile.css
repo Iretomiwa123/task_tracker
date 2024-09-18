@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(91.85deg, #480082 -1.89%, #7300d1 56.14%, #3b006b 114.18%);
+    color: white;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #3b006b;
+    padding: 2rem 1rem;
+    height: 100vh;
+    color: white;
+}
+
+.sidebar h2 {
+    color: #ffb800;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ffb800;
+    color: #3b006b;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 2rem;
+    background-color: #ffffff10;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b006b;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #ffb800;
+}
+
+.notifications {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.badge {
+    background-color: #ffb800;
+    color: #3b006b;
+    border-radius: 50%;
+    padding: 0.5rem 0.7rem;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+}
+
+.profile-card {
+    background-color: #480082;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.profile-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffb800;
+}
+
+.profile-card p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.details-section {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.details-section h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ffb800;
+}
+
+.details-section p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+
+    .profile-card {
+        padding: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sidebar {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .sidebar h2 {
+        font-size: 1.5rem;
+    }
+}
